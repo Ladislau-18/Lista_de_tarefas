@@ -1,0 +1,125 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background:  #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+  
+}
+
+#containerMain {
+	display: flex;
+  border: 1px solid #b45100;
+  border-radius: 5px;
+  padding: 10px 30px;
+  background: #050505ff;
+  width: 80%;
+  
+  
+}
+#container{
+	
+}
+
+.opcoes{
+  background: #050505f9 ;
+  padding: 5px;
+  width: 150px;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #252525cd;
+	
+}
+
+/*
+####################### 
+*/
+
+#container_tarefa{
+	margin-left: 25px;
+	
+}
+
+
+#text{
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+#adicionar {
+  background: #b45100;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 13px;
+  color: white;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#container_2{
+  color: white;
+  list-style-type: none;
+  
+}
+
+#concluido{
+	text-decoration: line-through;
+	background: 000000ef;
+	color: gray;
+	opacity: 0.5;
+}
+
+#tarefa_vazia{
+	font-size: 10px;
+	color: gray;
+	font-style: italic;
+}
+
+li{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  margin: 10px 0px; 
+  margin-left: -39px;
+  border-radius: 3px;
+  padding: 5px;
+  width: 580px;
+  background: #272727;
+  
+}
+#left{
+	width: 400px;
+}
+
+#span_tarefa{
+font-size: 15px;
+
+}
+#right{
+	font-size: 10px;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	margin-bottom: -5px;
+	
+}
+
+
+/*
+	opacity: 0;
+	transition: opacity 1;
+	
+}
+
+li:hover ~ .icon{
+	opacity: 1;
+}
+*/

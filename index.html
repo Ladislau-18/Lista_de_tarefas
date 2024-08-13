@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div id="containerMain" >
+        <div id="container" >
+            <input type="text" id="texto_tarefa" class="opcoes" placeholder="Qual é a sua tarefa... " required><br>
+            <input type="date" id="data_tarefa" class="opcoes" placeholder="data" required><br>
+            <input type="time" id="hora_tarefa" class="opcoes" placeholder="Hora" required><br>
+            <button id="adicionar">Adicionar</button>
+        </div>
+        
+        <div id="container_tarefa">
+        	<span id="text">
+        		Lista de tarefas
+        	</span>
+        	<ul id="container_2"></ul>
+        </div>
+        
+        
+  </div>
+  
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
+
