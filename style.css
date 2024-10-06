@@ -1,4 +1,13 @@
-body {
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	box-size: border-box;
+}
+
+main {
   padding: 0px;
   margin: 0px;
   height: 100vh;
@@ -6,9 +15,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: white; 
   
-  
+}
+body.desabled{
+	pointer-events: none;
+	background: red;
+}
+#confirmar{
+	position: fixed ;
+	transform: translateY(-130%);
+	display: none;
+	border: 1px solid darkorange;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: #050505ff;
+	animation: confirm forwards 0.5s  ;
+}
+#confirmar.mostrar {
+	display: block;
+	pointer-events: painted;
+	opacity: 1;
+}
+
+#confirmar > div{
+	display:flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.bot{
+	color: white;
+	background: #b45100;
+	border-radius:  3px;
+	padding: 5px 13px;
+	border: none;
 }
 
 #containerMain {
@@ -28,7 +68,7 @@ body {
 .opcoes{
   background: #050505f9 ;
   padding: 5px;
-  width: 150px;
+  width: 95%;
   color: white;
   border-radius: 3px;
   margin-bottom: 10px;
@@ -75,6 +115,9 @@ body {
 	opacity: 0.5;
 }
 
+audio{
+	border: 1px solid red;
+}
 #tarefa_vazia{
 	font-size: 10px;
 	color: gray;
@@ -89,12 +132,13 @@ li{
   margin-left: -39px;
   border-radius: 3px;
   padding: 5px;
-  width: 580px;
+  width: 100%;
   background: #272727;
   
 }
 #left{
 	width: 400px;
+
 }
 
 #span_tarefa{
@@ -112,14 +156,70 @@ font-size: 15px;
 	
 }
 
+@media (max-width: 500px) {
+	#containerMain {
+		width: 100%;
+		height: 100%;
+		border: none;
+		border-radius: none
+	}
+	#adicionar  {
+		height: 40px;
+	}
+	.opcoes{
+		height: 20px;
+	}
+	li{
+		width: 100%;
+		
+	}
+	#containerMain{
+		display: block;
+	}
+	#container_tarefa{
+		margin-top: 40px;
+	}
+	#text{
+		font-size: 20px;
+	}
+	#left #right{
+		font-size: 5px;
+	}
+	.icon{
+		width: 15px;
+		height: 15px;
+		
+	}
+	#span_tarefa{
+		font-size: 8px;
+	}
+	#right{
+		font-size: 5px;
+	}
+}
 
-/*
-	opacity: 0;
-	transition: opacity 1;
+
+@keyframes confirm {
 	
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+		transform: translateY(-100px)
+	}
+}
+@keyframes confirmExit{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		transform: translateY(-100px)
+	}
 }
 
-li:hover ~ .icon{
-	opacity: 1;
-}
-*/
+
+
+
+

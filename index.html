@@ -11,29 +11,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  
-  <div id="containerMain" >
-        <div id="container" >
-            <input type="text" id="texto_tarefa" class="opcoes" placeholder="Qual é a sua tarefa... " required><br>
-            <input type="date" id="data_tarefa" class="opcoes" placeholder="data" required><br>
-            <input type="time" id="hora_tarefa" class="opcoes" placeholder="Hora" required><br>
-            <button id="adicionar">Adicionar</button>
-        </div>
-        
-        <div id="container_tarefa">
-        	<span id="text">
-        		Lista de tarefas
-        	</span>
-        	<ul id="container_2"></ul>
-        </div>
-        
-        
-  </div>
-  
+<body >
+		
+	
+	  <div id="confirmar" >
+	  	<span>Deseja apagar está tarefa?</span>
+	  	<div>
+	  		<button id="Ok" class="bot" onclick="apagar_ok()"> OK</button>
+	  		<button id="cancelar" class="bot">Cancelar</button>
+	  	</div>
+	  </div>
+	  
+	  <main>
+	  <div id="containerMain" >
+	        <div id="container" >
+	            <input type="text" id="texto_tarefa" class="opcoes" placeholder="Qual é a sua tarefa... " required><br>
+	            <input type="date" id="data_tarefa" class="opcoes" placeholder="data" required><br>
+	            <input type="time" id="hora_tarefa" class="opcoes" placeholder="Hora" required><br>
+	            <button id="adicionar">Adicionar</button>
+	        </div>
+	        
+	        <div id="container_tarefa">
+	        	<span id="text">
+	        		Lista de tarefas
+	        	</span>
+	        	<ul id="container_2"></ul>
+	        </div>
+	        
+	        
+	  </div>
+	</main>
 
   <script src="main.js"></script>
   
 </body>
 </html>
+
 
