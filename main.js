@@ -55,24 +55,13 @@ function mostrar_lista() {
 }
 
 
-let confirmar = document.querySelector ("#confirmar")
-
 
 function apagar_tarefa(indice) {
+    let al = confirm("Deseja apagar esta tarefa?")
+    let ali = al == true? lista_de_tarefa.splice(indice, 1)
+    : alert("Não") ;
+    mostrar_lista();
 
-		document.body.classList.add('desabled')
-		
-    confirmar.classList.toggle('mostrar')
-      let ok = document.querySelector("#Ok").addEventListener("click", function () {
-      			lista_de_tarefa.splice(indice, 1);
-      			
-      			confirmar. classList.remove('mostrar');
-						mostrar_lista();
-						document.body.classList.remove('desabled')
-      })
-      
-      
-    
 }
 
 
