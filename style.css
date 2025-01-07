@@ -8,76 +8,52 @@ body{
 }
 
 main {
-  padding: 0px;
-  margin: 0px;
-  height: 100vh;
-  background:  #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white; 
-  
-}
-
-#confirmar{
-	position: fixed ;
-	transform: translateY(-130%);
-	display: none;
-	border: 1px solid darkorange;
-	padding: 10px 20px;
-	border-radius: 5px;
-	background: #050505ff;
-	animation: confirm forwards 0.5s  ;
-}
-#confirmar.mostrar {
-	display: block;
-	
+	padding: 0px;
+	margin: 0px;
+	height: 100vh;
+	background:  #272727;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white; 
 	
 }
 
-#confirmar > div{
-	display:flex;
-	justify-content: space-between;
-	margin-top: 20px;
-}
-.bot{
-	color: white;
-	background: #b45100;
-	border-radius:  3px;
-	padding: 5px 13px;
-	border: none;
-}
 
 #containerMain {
 	display: flex;
-  border: 1px solid #b45100;
-  border-radius: 5px;
-  padding: 10px 30px;
-  background: #050505ff;
-  width: 80%;
+	border: 1px solid #b45100;
+	border-radius: 5px;
+	padding: 10px 30px;
+	background: #050505ff;
+	width: 80%;
   
   
 }
 
 
 .opcoes{
-  background: #050505f9 ;
-  padding: 5px;
-  width: 95%;
-  color: white;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  border: 1px solid #252525cd;
+	outline: none;
+	background: #050505f9 ;
+	padding: 5px;
+	width: 95%;
+	color: white;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	border: 1px solid #252525cd;
 	
 }
 
 /*
 ####################### 
 */
+#container{
+
+}
 
 #container_tarefa{
-	margin-left: 25px;
-	
+	width: 100%;
+
 }
 
 
@@ -94,7 +70,7 @@ main {
   padding: 5px 13px;
   color: white;
   margin: 10px 0;
-  width: 100%;
+  width: 95%;
 }
 
 #container_2{
@@ -103,28 +79,25 @@ main {
   
 }
 
-#concluido{
+.concluida{
 	text-decoration: line-through;
-	background: 000000ef;
+	background: #705531;
 	color: gray;
 	opacity: 0.5;
 }
 
-audio{
-	border: 1px solid red;
-}
 #tarefa_vazia{
-	font-size: 10px;
+	font-size: 15px;
 	color: gray;
 	font-style: italic;
 }
 
-li{
+#li{
   display: flex;
   justify-content: space-between ;
   align-items: center;
   margin: 10px 0px; 
-  margin-left: -39px;
+ 
   border-radius: 3px;
   padding: 5px;
   width: 100%;
@@ -132,7 +105,8 @@ li{
   
 }
 #left{
-	width: 400px;
+	width: 80%;
+	
 
 }
 
